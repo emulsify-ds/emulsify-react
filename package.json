@@ -1,0 +1,29 @@
+{
+  "name": "emulsify-react",
+  "version": "1.0.0",
+  "description": "Emulsify - React version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "sass": "^1.81.0",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.5",
+    "@storybook/addon-interactions": "^8.4.5",
+    "@storybook/addon-onboarding": "^8.4.5",
+    "@storybook/blocks": "^8.4.5",
+    "@storybook/react": "^8.4.5",
+    "@storybook/react-vite": "^8.4.5",
+    "@storybook/test": "^8.4.5",
+    "storybook": "^8.4.5"
+  }
+}
