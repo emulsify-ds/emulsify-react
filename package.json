@@ -6,13 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "style-dictionary:build": "node ./src/tokens/tokensTransform.mjs",
+    "tokens:build": "npm run tokens:transform && npm run style-dictionary:build",
+    "tokens:transform": "token-transformer ./src/tokens/figma.tokens.json ./src/tokens/transformed.tokens.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
     "sass": "^1.81.0",
+    "style-dictionary": "^4.2.0",
+    "token-transformer": "^0.0.33",
     "typescript": "^5.6.3"
   },
   "devDependencies": {
