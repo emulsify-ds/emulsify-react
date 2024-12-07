@@ -15,10 +15,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Borders: Story = {
   args: {
-    borderRadius: Object.keys(tokens.radius).map((name) => {
+    borders: Object.keys(tokens.border).map((name) => {
       return {
         name,
-        value: tokens.radius[name as keyof typeof tokens.radius].value,
+        value: tokens.border[name as keyof typeof tokens.border].value,
       };
     }),
   },

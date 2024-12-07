@@ -3,7 +3,7 @@ import React from 'react';
 import clBase from '../../foundation/utility/cl-base.module.scss';
 
 type BorderTokensProps = {
-  borderRadius: {
+  borders: {
     name: string;
     value: number;
   }[];
@@ -14,7 +14,7 @@ export default function BorderTokens({
 }: BorderTokensProps) {
   return (
     <div>
-      <h1 className={clBase['sb-title']}>Border Radius Tokens</h1>
+      <h1 className={clBase['sb-title']}>Border Tokens</h1>
       <ul className={clBase['sb-list']}>
         {borders.map((item) => (
           <li className={clBase['sb-list__item']} key={item.name}>
@@ -22,15 +22,14 @@ export default function BorderTokens({
             <span className={clBase['sb-list__value']}>{item.value}px</span>
             <span className={clBase['sb-list__custom-property']}>
               <code className={clBase['sb-custom-property-name']}>
-                var(--radius-{item.name})
+                var(--border-{item.name})
               </code>
             </span>
             <span
               className={clBase['sb-list__visualization']}
               style={{
-                borderRadius: `var(--radius-${item.name})`,
-                width: '75px',
-                height: '75px',
+                height: `var(--border-${item.name})`,
+                width: '300px',
                 background: 'var(--colors-sb-visualization)',
               }}></span>
           </li>
