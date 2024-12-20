@@ -14,7 +14,7 @@ export default function LineHeightTokens({
 }: LineHeightTokensProps) {
   return (
     <div>
-      <h1 className={clBase['sb-title']}>Line Heights</h1>
+      <h1 className={clBase['sb-title']}>Line Height</h1>
       <ul className={clBase['sb-list']}>
         {lineHeight.map((item) => (
           <li className={clBase['sb-list__item']} key={item.name}>
