@@ -4,10 +4,7 @@ import BorderTokens from "./border-tokens";
 
 const meta = {
   title: 'Tokens/Borders',
-  component: BorderTokens,
-  parameters: {
-    layout: 'fullscreen',
-  },
+  component: BorderTokens
 } satisfies Meta<typeof BorderTokens>;
 
 export default meta;
