@@ -14,7 +14,7 @@ export default function SizeTokens({
 }: SizeTokensProps) {
   return (
     <div>
-      <h1 className={clBase['sb-title']}>Size Tokens</h1>
+      <h1 className={clBase['sb-title']}>Size</h1>
       <ul className={clBase['sb-list']}>
         {sizes.map((item) => (
           <li className={clBase['sb-list__item']} key={item.name}>
