@@ -93,7 +93,9 @@
 .sb-spacing-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  background-color: #d606c1;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-grays-100);
 }
 
 .sb-cover {
